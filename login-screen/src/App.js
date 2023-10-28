@@ -1,22 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
+import loginimg from './assets/images/pmg7.jpg'
 
 const Header = styled.h1`
   font-size: 24px;
+  color:white;
   margin-bottom: 20px;
   margin-top: 20px; 
 `;
 
 const Container = styled.div`
-  display: flex;
+ display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 180px;
+  background-image: url(${loginimg}); 
+  background-size: cover; 
+  background-position: center; 
+  width: 100vw;
+  max-height:100vh;
+  height:100vh;
 `;
 
 const Input = styled.input`
   width: 70%;
   height: 40px;
+  background:transparent;
   margin-bottom: 20px;
   padding: 10px;
   font-size: 16px;
